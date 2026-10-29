@@ -6,7 +6,6 @@
 */
 
 /* global styles */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
 body {
@@ -17,6 +16,17 @@ body {
 h1, h2 {
     font-family: "DM Serif Display", serif;
     color: #184f63;
+}
+
+/* Buttons */
+.my-custom-button {
+    background-color: #1f7798;
+    border: #1f7798;
+}
+
+.my-custom-button:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a;
 }
 
 .sharp-corners, .sharp-corners * {
