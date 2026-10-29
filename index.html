@@ -72,6 +72,14 @@
           </p>
           <!-- mb-5 gives extra margin spacing under lead text -->
           <p class="lead mb-5">Let's create something amazing together!</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Subscribe to my newsletter!
+          </button>
         </div>
       </section>
     </header>
@@ -214,12 +222,75 @@
               can work together to create something amazing!
             </p>
           </col-12>
-            <div class="col-12 col-md-10 col-lg-8">
-                <!-- Add your form here -->
-            </div>
+          <div class="col-12 col-md-10 col-lg-8">
+            <form class="row g-3 mb-4">
+              <div class="col-lg-4">
+                <label for="inputName4" class="form-label">Full name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-lg-4">
+                <label for="inputPhone4" class="form-label">Phone number</label>
+                <input type="" class="form-control" id="inputPhone4" />
+              </div>
+              <div class="col-lg-4">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+              </div>
+              <div class="col-12">
+                <label for="inputMessage4" class="form-label">Message</label>
+                <textarea class="form-control" id="inputMessage4"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
-
       </footer>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Join my newsletter for the latest updates on my projects, coding
+                tips, and industry insights delivered straight to your inbox.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script
